@@ -1,0 +1,113 @@
+.new-incident-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.new-incident-container .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1120px;
+  padding: 5rem;
+
+  background-color: #f0f0f5;
+  border-radius: 8px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+}
+.new-incident-container .content section {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+/* section left */
+.new-incident-container .content section .img-logo {
+  width: 180px;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}
+.new-incident-container .content section h1 {
+  font-size: 2rem;
+  color: #13131a;
+  margin-bottom: 2rem;
+}
+.new-incident-container .content section p {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  color: #737380;
+  line-height: 2rem;
+}
+/* section right */
+.new-incident-container .content section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.new-incident-container .content section form input,
+.new-incident-container .content section form textarea {
+  margin-bottom: 1rem;
+}
+.new-incident-container .content section form textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  line-height: 1.5rem;
+  min-height: 135px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 0.5rem;
+  resize: vertical;
+}
+
+/* btn-inline */
+.new-incident-container .content section form .btn-group-inline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.new-incident-container
+  .content
+  section
+  form
+  .btn-group-inline
+  button:first-child {
+  background-color: transparent;
+  color: #41414d;
+  border: 2.5px solid #dcdce6;
+  width: 55%;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .new-incident-container {
+    padding: 0;
+  }
+  .new-incident-container .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-incident-container .content section {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .new-incident-container .content section .img-logo {
+    margin-bottom: 2rem;
+  }
+  .new-incident-container .content section h1 {
+    margin-bottom: 0.5rem;
+  }
+  .new-incident-container .content section p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

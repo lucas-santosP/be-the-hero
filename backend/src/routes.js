@@ -28,6 +28,6 @@ module.exports = routes;
     -Recebido por: const params = req.params
 
 # Request Body: Corpo da requisição para criar ou alterar recursos
-    -Enviado por: Body do POST
-    -Recebido por: const body = request.body;
+    -Enviado por: Body do formulario POST
+    -Recebido por: const body = req.body;
 */

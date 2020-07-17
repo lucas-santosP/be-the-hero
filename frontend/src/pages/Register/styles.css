@@ -1,0 +1,99 @@
+.register-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.register-container .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1120px;
+  padding: 5rem;
+
+  background-color: #f0f0f5;
+  border-radius: 8px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+}
+.register-container .content section {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+/* section left */
+.register-container .content section .img-logo {
+  width: 180px;
+  object-fit: contain;
+  margin-bottom: 3rem;
+}
+.register-container .content section h1 {
+  font-size: 2rem;
+  color: #13131a;
+  margin-bottom: 2rem;
+}
+.register-container .content section p {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  color: #737380;
+  line-height: 2rem;
+}
+/* section right */
+.register-container .content section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.register-container .content section form input {
+  margin-bottom: 1rem;
+}
+/* inputs-inline */
+.register-container .content section form .input-group-inline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.register-container .content section form .input-group-inline div:first-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.register-container .content section form .input-group-inline div:last-child {
+  flex-direction: column;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .register-container {
+    padding: 0;
+  }
+  .register-container .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .register-container .content section {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .register-container .content section .img-logo {
+    margin-bottom: 2rem;
+  }
+  .register-container .content section h1 {
+    margin-bottom: 0.5rem;
+  }
+  .register-container .content section p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

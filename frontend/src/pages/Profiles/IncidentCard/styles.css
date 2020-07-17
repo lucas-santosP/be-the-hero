@@ -1,0 +1,41 @@
+.incident-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 45%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0.7rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.incident-card span {
+  width: 90%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #41414d;
+  margin-bottom: 0.75rem;
+}
+.incident-card p {
+  width: 90%;
+  font-size: 14px;
+  color: #737380;
+  margin-bottom: 1.2rem;
+  word-break: break-all;
+}
+.incident-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.incident-card .trash-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+.incident-card .trash-icon:hover {
+  opacity: 0.8;
+}

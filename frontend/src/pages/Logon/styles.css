@@ -1,0 +1,76 @@
+.logon-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1120px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+}
+/* section left */
+.logon-container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 400px;
+  padding: 0 2rem;
+}
+.logon-container section .img-logo {
+  max-width: 250px;
+  object-fit: contain;
+  margin-bottom: 5rem;
+}
+.logon-container section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logon-container section form h1 {
+  color: #13131a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.logon-container section form input {
+  margin-bottom: 1rem;
+}
+.logon-container section form button {
+  margin-bottom: 2rem;
+}
+/* img right */
+.logon-container .img-heroes {
+  object-fit: contain;
+  object-position: right;
+  min-width: 350px;
+}
+
+@media screen and (max-width: 700px) {
+  .logon-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .logon-container section {
+    align-items: center;
+    max-width: 100%;
+  }
+  .logon-container section .img-logo {
+    max-width: 175px;
+    margin-bottom: 2rem;
+  }
+  .logon-container section form {
+    padding: 0 3rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .logon-container .img-heroes {
+    padding-left: 0;
+    min-width: auto;
+    width: 300px;
+  }
+}

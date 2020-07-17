@@ -1,0 +1,98 @@
+.profiles-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 1120px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profiles-container header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.profiles-container header .img-logo {
+  max-width: 140px;
+}
+.profiles-container header span {
+  color: #13131a;
+  margin-left: 1.2rem;
+  margin-right: 0.75rem;
+}
+.profiles-container header aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.profiles-container header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  width: 260px;
+  min-width: max-content;
+}
+.profiles-container header .btn-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4rem;
+  height: 3rem;
+  margin-left: 1rem;
+  color: #e02041;
+  background-color: transparent;
+  border: 2px solid #dcdce6;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.profiles-container header .btn-logout:hover {
+  border-color: rgb(161, 161, 161);
+}
+
+.profiles-container h1 {
+  margin-bottom: 1rem;
+}
+.profiles-container ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .profiles-container header {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  .profiles-container header .img-logo {
+    width: 125px;
+    margin-bottom: 1.5rem;
+  }
+  .profiles-container header span {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .profiles-container header aside {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .profiles-container h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .profiles-container ul .incident-card {
+    width: 100%;
+    margin: 0.7rem auto;
+  }
+}
