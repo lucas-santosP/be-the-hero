@@ -18,6 +18,7 @@ export default function Register() {
     localStorage.clear();
     history.push("/");
   }
+
   async function handleDeleteIncident(incidentId) {
     try {
       await api.delete(`incidents/${incidentId}`, {
@@ -74,7 +75,7 @@ export default function Register() {
             ></IncidentCard>
           ))
         ) : (
-          <p>Nenhum incidente cadastrado.</p>
+          <p>Nenhum caso cadastrado.</p>
         )}
       </ul>
     </div>
