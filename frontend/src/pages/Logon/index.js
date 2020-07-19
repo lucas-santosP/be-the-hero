@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 import { Link, useHistory } from "react-router-dom";
@@ -24,12 +24,6 @@ export default function Logon() {
       alert("Falha no login, tente novamente");
     }
   }
-
-  useEffect(() => {
-    const ongId = localStorage.getItem("ongId");
-    const ongName = localStorage.getItem("ongName");
-    if (ongId && ongName) history.push("/profiles");
-  }, [history]);
 
   return (
     <div id="logon" className="logon-container">
