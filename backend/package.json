@@ -2,21 +2,24 @@
   "name": "login-page-back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ."
+    "test": "cross-env NODE_ENV=test jest",
+    "start": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "celebrate": "^12.1.2",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "knex": "^0.21.1",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
